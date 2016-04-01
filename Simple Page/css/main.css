@@ -104,6 +104,7 @@ nav a:hover {
 	margin: auto;
 	padding-bottom: 50px;
 	line-height: 1.2em;
+	height: 100%;
 }
 
 .content .button {
@@ -267,19 +268,68 @@ footer {
 	height: 55px;
 	color: #555;
 	font-size: 13px;
-	padding-left: 250px;
+	text-align: left;
+	padding-left: 100px;
 }
 
 
 
-/*when screen gets narroer than 730px (width of nav)*/
+/*when screen gets narrower than 730px (width of nav)*/
 @media screen and (max-width:730px) {
-	header nav .navigation {
+	.navigation {
 		display: none;
 	}
 		
-	header nav .mobile_nav {
+	.mobile_nav {
 		display: block;
+	}
+
+	article {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 20px; 
+	}
+
+	.pagination, .carousel {
+		display: none;
+	}
+
+	.show-more-link {
+		background-color: black;
+		text-align: center;
+		width: 100%;
+	}
+
+	.show-more-link a {
+		border-bottom: none;
+		color: white;
+	}
+	
+	/*.container2 li a {
+		display: none;
+	}*/
+
+}
+
+@media screen and (max-width: 1025px) {
+	.content h1 {
+		font-size: 60px; 
+		padding-top: 200px;
+	}
+
+	.container2 li {
+		padding: 0;
+		background-color: none;
+	}
+
+	.container2 li a {
+		color: black;
+		background-color: none;
+	}
+	
+	.footer {
+		text-align: center; 
+		padding: 0;
 	}
 }
 
